@@ -4,13 +4,13 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {space :0:548:x}"
-			"$verticalGroup": "par l {space :0:424:x}"
+			"$horizontalGroup": "par l {space :0:668:x}"
+			"$verticalGroup": "par l {space :0:459:x}"
 		} ) {
 			name: "this"
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 550, 455 )
+			"size": new java.awt.Dimension( 670, 490 )
 		} )
 	}
 }

@@ -1,11 +1,11 @@
-import java.awt.*;
-import javax.swing.*;
-import org.jdesktop.layout.GroupLayout;
 /*
- * Created by JFormDesigner on Wed Jan 04 14:17:31 KST 2023
+ * Created by JFormDesigner on Wed Jan 04 14:38:37 KST 2023
  */
 
+package UI;
 
+import javax.swing.*;
+import javax.swing.GroupLayout;
 
 /**
  * @author jih86
@@ -20,17 +20,17 @@ public class MainMenu extends JFrame {
         // Generated using JFormDesigner Evaluation license - Inhyeok Jang
 
         //======== this ========
-        Container contentPane = getContentPane();
+        var contentPane = getContentPane();
 
         GroupLayout contentPaneLayout = new GroupLayout(contentPane);
         contentPane.setLayout(contentPaneLayout);
         contentPaneLayout.setHorizontalGroup(
             contentPaneLayout.createParallelGroup()
-                .add(0, 548, Short.MAX_VALUE)
+                .addGap(0, 668, Short.MAX_VALUE)
         );
         contentPaneLayout.setVerticalGroup(
             contentPaneLayout.createParallelGroup()
-                .add(0, 424, Short.MAX_VALUE)
+                .addGap(0, 459, Short.MAX_VALUE)
         );
         pack();
         setLocationRelativeTo(getOwner());
