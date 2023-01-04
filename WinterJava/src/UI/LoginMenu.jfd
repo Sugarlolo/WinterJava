@@ -4,13 +4,31 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {space :0:400:x}"
-			"$verticalGroup": "par l {space :0:300:x}"
+			"$horizontalGroup": "par l {seq l {space :p:102:p, par l:::p {comp textField1:::::x, seq {comp loginBtn:::p::p, space :p:52:p, comp registerBtn:::p::p}, comp textField2::l:::x}, space ::84:x}, seq t {space ::152:x, comp titleLabel:::p::p, space :p:134:p}}"
+			"$verticalGroup": "par l {seq t {space ::113:x, comp titleLabel:::p::p, space :p:51:p, comp textField1:::p::p, space :::p, comp textField2:::p::p, space :p:23:p, par b {comp registerBtn::b:p::p, comp loginBtn::b:p::p}, space :p:109:p}}"
 		} ) {
 			name: "this"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginBtn"
+				"text": "로그인"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "registerBtn"
+				"text": "회원가입"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "titleLabel"
+				"text": "Coffee Order System"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 400, 300 )
+			"size": new java.awt.Dimension( 400, 440 )
 		} )
 	}
 }
